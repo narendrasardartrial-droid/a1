@@ -1,0 +1,73 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container mt-5">
+    <h3>Teacher Profile & Subjects</h3>
+    <form method="POST" enctype="multipart/form-data">
+        {% csrf_token %}
+        <input type="hidden" name="dept_id" value="{{ dept_id }}">
+        <input type="hidden" name="semester" value="{{ semester }}">
+
+        <div class="mb-3">
+            <label>Employee ID</label>
+            <input type="text" name="employee_id" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label>First Name</label>
+            <input type="text" name="first_name" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label>Last Name</label>
+            <input type="text" name="last_name" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label>Email</label>
+            <input type="email" name="email" class="form-control" required>
+        </div>
+
+        <div class="mb-3">
+            <label>Phone</label>
+            <input type="text" name="phone" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label>Address</label>
+            <textarea name="address" class="form-control"></textarea>
+        </div>
+
+        <div class="mb-3">
+            <label>Profile Picture</label>
+            <input type="file" name="profile_picture" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label>Salary</label>
+            <input type="number" name="salary" class="form-control">
+        </div>
+
+        <div class="mb-3">
+            <label>Designation</label>
+            <select name="designation" class="form-select" required>
+                <option value="">--Select Designation--</option>
+                {% for code, name in designations %}
+                    <option value="{{ code }}">{{ name }}</option>
+                {% endfor %}
+            </select>
+        </div>
+
+        <div class="mb-3">
+            <label>Subjects</label>
+            <select name="subjects" class="form-select" multiple size="5" required>
+                {% for subj in subjects %}
+                    <option value="{{ subj.id }}">{{ subj.name }}</option>
+                {% endfor %}
+            </select>
+            <small class="text-muted">Only subjects for the selected department & semester. Hold Ctrl (Cmd) to select multiple.</small>
+        </div>
+
+        <button type="submit" class="btn btn-success">Create Teacher</button>
+    </form>
+</div>
+{% endblock %}

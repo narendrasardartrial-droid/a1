@@ -1,0 +1,224 @@
+{% extends 'base.html' %}
+{% block title %}IT Engineering{% endblock %}
+{% block content %}
+{% load static %}
+
+<!-- Hero Section -->
+<div class="text-white text-center p-5 rounded-3 shadow"
+     style="background: url('{% static 'images/public/it/it_banner.jpg' %}') no-repeat center center; background-size: cover;">
+
+  <!-- Overlay for better text visibility -->
+  <div class="bg-dark bg-opacity-50 p-5 rounded-3">
+    <h1>IT Engineering</h1>
+    <p class="lead">From Networking Fundamentals to Emerging IT Technologies</p>
+  </div>
+
+</div>
+
+<!-- About Section -->
+<div class="mt-4">
+  <div class="row align-items-center my-4">
+    <!-- Banner Image -->
+    <div class="col-md-6">
+      <img src="{% static 'images/public/it/iteng.jpg' %}"
+           alt="IT Engineering Banner"
+           class="img-fluid rounded shadow">
+    </div>
+
+    <!-- Text Content -->
+    <div class="col-md-6">
+      <h2>About IT Engineering</h2>
+      <p>
+        Information Technology (IT) Engineering focuses on computing, networking, and communication systems that
+        power modern organizations. IT engineers specialize in developing, managing, and securing software and
+        infrastructure that keeps businesses running efficiently.
+      </p>
+      <p>
+        IT professionals work on network management, cybersecurity, cloud platforms, and enterprise systems, ensuring
+        that technology integrates seamlessly with business processes. Their expertise drives innovation in sectors
+        like finance, healthcare, education, and e-commerce.
+      </p>
+      <p>
+        The field continues to evolve with emerging technologies like AI, IoT, and blockchain, offering diverse
+        global career opportunities and the chance to impact the digital world.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- What You Learn -->
+<div class="mt-5">
+  <h3 class="mb-3">📘 What You Learn</h3>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card shadow-sm mb-3">
+        <div class="card-body">
+          <h5>Core IT Concepts</h5>
+          <ul>
+            <li>Networking & Network Security</li>
+            <li>Database Management Systems</li>
+            <li>Operating Systems & Virtualization</li>
+            <li>Programming (Python, Java, C#)</li>
+            <li>Web Technologies & Software Engineering</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card shadow-sm mb-3">
+        <div class="card-body">
+          <h5>Emerging IT Technologies</h5>
+          <ul>
+            <li>Cloud Computing & DevOps</li>
+            <li>Cybersecurity & Ethical Hacking</li>
+            <li>Artificial Intelligence & Machine Learning</li>
+            <li>Data Analytics & Big Data</li>
+            <li>Enterprise IT Projects & Automation</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Career Opportunities -->
+<div class="mt-5">
+  <h3 class="mb-3">💼 Career Opportunities</h3>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/it/software_dev.png' %}"
+             alt="Software Developer"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>Software Developer</h5>
+          <p>Create applications, web apps, and enterprise solutions for businesses worldwide.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/it/network_eng.jpg' %}"
+             alt="Network Engineer"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>Network Engineer</h5>
+          <p>Design, manage, and secure company networks and communication systems.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/it/cybersecurity.jpg' %}"
+             alt="Cybersecurity Specialist"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>Cybersecurity Specialist</h5>
+          <p>Protect IT systems and data from cyber threats and breaches.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/it/cloud_eng.webp' %}"
+             alt="Cloud Engineer"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>Cloud Engineer</h5>
+          <p>Build and manage cloud infrastructure for global businesses.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/it/data_analyst.jpeg' %}"
+             alt="Data Analyst"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>Data Analyst</h5>
+          <p>Analyze business data to drive insights and support decision-making.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/it/system_admin.webp' %}"
+             alt="System Administrator"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>System Administrator</h5>
+          <p>Maintain IT systems, servers, and enterprise infrastructure.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Big Companies Section -->
+<div class="mt-5 p-4 bg-light rounded-3 shadow">
+  <h3 class="mb-3">🌍 Opportunities in Big Companies</h3>
+  <p>
+    IT Engineering graduates can secure roles in top global IT and tech companies.
+    Giants like <b>Google, Microsoft, Amazon, Facebook, and Apple</b> actively hire IT professionals.
+    In India, companies like <b>TCS, Infosys, Wipro, HCL, Accenture, and Cognizant</b> offer thousands of opportunities.
+  </p>
+  <p>
+    Students with strong IT skills, certifications, and project experience can aim for internships
+    and placements in these companies. Knowledge in <b>Cloud, Cybersecurity, AI, and Networking</b>
+    further enhances career prospects.
+  </p>
+
+  <!-- Logos Section -->
+  <div class="container text-center mt-4">
+    <div class="row g-4 justify-content-center">
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/it/google.gif' %}" alt="Google" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/it/microsoft.gif' %}" alt="Microsoft" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/it/amazon.gif' %}" alt="Amazon" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/it/facebook.gif' %}" alt="Facebook" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/it/apple.gif' %}" alt="Apple" class="img-fluid" style="height:80px;">
+      </div>
+    </div>
+
+    <div class="row g-4 justify-content-center mt-3">
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/it/tcs.gif' %}" alt="TCS" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/it/infosys.gif' %}" alt="Infosys" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/it/wipro.gif' %}" alt="Wipro" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/it/hcl.gif' %}" alt="HCL" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/it/accenture.gif' %}" alt="Accenture" class="img-fluid" style="height:80px;">
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

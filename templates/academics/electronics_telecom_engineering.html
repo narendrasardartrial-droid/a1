@@ -1,0 +1,222 @@
+{% extends 'base.html' %}
+{% block title %}Electronics & Telecommunication Engineering{% endblock %}
+{% block content %}
+{% load static %}
+
+<!-- Hero Section -->
+<div class="text-white text-center p-5 rounded-3 shadow"
+     style="background: url('{% static 'images/public/etc/etc_banner.gif' %}') no-repeat center center; background-size: cover;">
+
+  <!-- Overlay for better text visibility -->
+  <div class="bg-dark bg-opacity-50 p-5 rounded-3">
+    <h1>Electronics & Telecommunication Engineering</h1>
+    <p class="lead">From Circuit Design to Advanced Communication Systems</p>
+  </div>
+
+</div>
+
+<!-- About Section -->
+<div class="mt-4">
+  <div class="row align-items-center my-4">
+    <!-- Banner Image -->
+    <div class="col-md-6">
+      <img src="{% static 'images/public/etc/etcimage.gif' %}"
+           alt="Electronics & Telecommunication Banner"
+           class="img-fluid rounded shadow">
+    </div>
+
+    <!-- Text Content -->
+    <div class="col-md-6">
+      <h2>About Electronics & Telecommunication Engineering</h2>
+      <p>
+        ETC Engineering focuses on designing, developing, and maintaining electronic circuits, devices,
+        and communication systems. It combines principles of electronics, signal processing, and telecommunication.
+      </p>
+      <p>
+        ETC engineers work on embedded systems, IoT devices, wireless communication networks, and digital
+        signal processing. They contribute to industries such as telecommunications, consumer electronics,
+        defense, and space technology.
+      </p>
+      <p>
+        With emerging technologies like 5G, IoT, and AI-based communication, ETC offers dynamic career opportunities
+        both in India and globally.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- What You Learn -->
+<div class="mt-5">
+  <h3 class="mb-3">📘 What You Learn</h3>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card shadow-sm mb-3">
+        <div class="card-body">
+          <h5>Core ETC Concepts</h5>
+          <ul>
+            <li>Analog & Digital Electronics</li>
+            <li>Microprocessors & Microcontrollers</li>
+            <li>Communication Systems (Analog & Digital)</li>
+            <li>Signals & Systems</li>
+            <li>Embedded Systems & VLSI</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card shadow-sm mb-3">
+        <div class="card-body">
+          <h5>Emerging Technologies</h5>
+          <ul>
+            <li>IoT & Wireless Sensor Networks</li>
+            <li>5G & Next-Gen Communication Networks</li>
+            <li>Artificial Intelligence in Telecom</li>
+            <li>Robotics & Automation</li>
+            <li>Signal Processing & Embedded IoT Systems</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Career Opportunities -->
+<div class="mt-5">
+  <h3 class="mb-3">💼 Career Opportunities</h3>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/etc/embedded_dev.gif' %}"
+             alt="Embedded Systems Developer"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>Embedded Systems Developer</h5>
+          <p>Develop embedded software and hardware for devices and IoT systems.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/etc/telecom_eng.gif' %}"
+             alt="Telecommunication Engineer"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>Telecommunication Engineer</h5>
+          <p>Design and maintain wireless and wired communication networks.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/etc/pcb_design.webp' %}"
+             alt="Electronics Engineer"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>Electronics Engineer</h5>
+          <p>Work on circuit design, PCB development, and electronics manufacturing.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/etc/iot_dev.gif' %}"
+             alt="IoT Developer"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>IoT Developer</h5>
+          <p>Develop connected devices and sensor-based applications for smart systems.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/etc/signal_processing.gif' %}"
+             alt="Signal Processing Engineer"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>Signal Processing Engineer</h5>
+          <p>Analyze and process signals for communication, audio, and imaging systems.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/etc/robotics.gif' %}"
+             alt="Robotics Engineer"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>Robotics Engineer</h5>
+          <p>Develop automated systems and robotics for industrial and research applications.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Big Companies Section -->
+<div class="mt-5 p-4 bg-light rounded-3 shadow">
+  <h3 class="mb-3">🌍 Opportunities in Big Companies</h3>
+  <p>
+    ETC graduates can secure roles in leading electronics, telecom, and technology companies globally.
+    Giants like <b>Qualcomm, Intel, Ericsson, Cisco, and Texas Instruments</b> actively recruit ETC engineers.
+    In India, companies like <b>Bharat Electronics, Tata Communications, Wipro, Reliance Jio, and L&T Technology</b> offer ample opportunities.
+  </p>
+  <p>
+    Students with strong electronics and communication skills, along with hands-on projects in embedded systems, IoT, and telecom,
+    have great chances for placements and internships. Knowledge of <b>5G, Robotics, and IoT systems</b> further boosts career prospects.
+  </p>
+
+  <!-- Logos Section -->
+  <div class="container text-center mt-4">
+    <div class="row g-4 justify-content-center">
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/etc/qualcomm.webp' %}" alt="Qualcomm" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/etc/intel.gif' %}" alt="Intel" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/etc/ericsson.gif' %}" alt="Ericsson" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/etc/cisco.gif' %}" alt="Cisco" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/etc/ti.png' %}" alt="Texas Instruments" class="img-fluid" style="height:80px;">
+      </div>
+    </div>
+
+    <div class="row g-4 justify-content-center mt-3">
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/etc/dell.gif' %}" alt="Bharat Electronics" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/etc/sony.gif' %}" alt="Tata Communications" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/etc/samsung.gif' %}" alt="Wipro" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/etc/nvdia.gif' %}" alt="Reliance" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/etc/amd.gif' %}" alt="L&T Technology" class="img-fluid" style="height:80px;">
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

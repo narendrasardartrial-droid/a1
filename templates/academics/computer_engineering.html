@@ -1,0 +1,238 @@
+{% extends 'base.html' %}
+{% block title %}Computer Engineering{% endblock %}
+{% block content %}
+{% load static %}
+<!-- Hero Section -->
+<div class="text-white text-center p-5 rounded-3 shadow"
+     style="background: url('{% static 'images/public/comp_banner.jpg' %}') no-repeat center center; background-size: cover;">
+
+  <!-- Overlay for better text visibility -->
+  <div class="bg-dark bg-opacity-50 p-5 rounded-3">
+    <h1>Computer Engineering</h1>
+    <p class="lead">From Coding Fundamentals to Cutting-Edge Technologies</p>
+  </div>
+
+</div>
+
+
+
+<!-- About Section -->
+<div class="mt-4">
+  <div class="row align-items-center my-4">
+    <!-- Banner Image -->
+    <div class="col-md-6">
+      <img src="{% static 'images/public/comp/compeng.webp' %}"
+           alt="Computer Engineering Banner"
+           class="img-fluid rounded shadow">
+    </div>
+
+    <!-- Text Content -->
+    <div class="col-md-6">
+      <h2>About Computer Engineering</h2>
+     <p>
+  Computer Engineering is the backbone of the digital world, bringing together principles of computer science,
+  electrical engineering, and mathematics to solve real-world problems. It is not just about writing code, but
+  also about understanding how software interacts with hardware, how systems communicate, and how innovative
+  technologies can be built to make human life easier and more efficient.
+</p>
+
+<p>
+  From developing mobile applications that connect millions of people, to designing AI-powered systems that
+  revolutionize industries, computer engineers play a vital role in shaping the future. They work on everything
+  from cloud computing, cybersecurity, and machine learning, to embedded systems, Internet of Things (IoT), and
+  high-performance computing. Each project pushes the boundaries of technology and opens doors to endless
+  opportunities.
+</p>
+
+<p>
+   With the continuous evolution of technology,
+  computer engineering remains one of the most dynamic and future-proof professions, offering global career
+  opportunities and the chance to impact society at large.
+</p>
+
+    </div>
+  </div>
+</div>
+
+
+<!-- What You Learn -->
+<div class="mt-5">
+  <h3 class="mb-3">📘 What You Learn</h3>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card shadow-sm mb-3">
+        <div class="card-body">
+          <h5>Core Programming & Systems</h5>
+          <ul>
+            <li>Programming (Python, C, C++, Java)</li>
+            <li>Data Structures & Algorithms</li>
+            <li>Operating Systems</li>
+            <li>Database Management Systems</li>
+            <li>Computer Networks & Security</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card shadow-sm mb-3">
+        <div class="card-body">
+          <h5>Emerging Technologies</h5>
+          <ul>
+            <li>Web & Mobile App Development</li>
+            <li>Artificial Intelligence & Machine Learning</li>
+            <li>Cloud Computing & Big Data</li>
+            <li>Cybersecurity</li>
+            <li>Software Engineering Projects</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Career Opportunities -->
+<div class="mt-5">
+  <h3 class="mb-3">💼 Career Opportunities</h3>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/comp/sqlcard.png' %}"
+             alt="Software Developer"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>Software Developer</h5>
+          <p>Create applications, websites, and systems that run industries worldwide.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/comp/datascientist.webp' %}"
+             alt="Data Scientist"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>Data Scientist</h5>
+          <p>Turn massive datasets into meaningful insights for decision-making.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/comp/cybersecurity.webp' %}"
+             alt="Cybersecurity"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>Cybersecurity Specialist</h5>
+          <p>Defend systems from hackers, malware, and cyber threats.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/comp/cloudeng.png' %}"
+             alt="Cloud Engineer"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>Cloud Engineer</h5>
+          <p>Design cloud platforms like AWS, Azure, and Google Cloud for businesses.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/comp/aicard.jpg' %}"
+             alt="AI Engineer"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>AI & ML Engineer</h5>
+          <p>Build intelligent systems that learn and automate real-world tasks.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/comp/systenarchi.jpg' %}"
+             alt="System Architect"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>System Architect</h5>
+          <p>Design IT infrastructures that support millions of users and businesses.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!-- Big Companies Section -->
+<div class="mt-5 p-4 bg-light rounded-3 shadow">
+  <h3 class="mb-3">🌍 Opportunities in Big Companies</h3>
+  <p>
+    With the right skills and projects, Computer Engineering graduates can secure roles in leading global companies.
+    Giants like <b>Google, Microsoft, Amazon, Facebook, and Apple</b> actively recruit computer engineers for cutting-edge roles.
+    In India, leading IT companies like <b>TCS, Infosys, Wipro, HCL, Accenture, and Cognizant</b> offer thousands of jobs each year.
+  </p>
+  <p>
+    Students with strong programming knowledge, problem-solving ability, and real-world project experience can aim for
+    internships and placements at these companies. Building a portfolio with open-source contributions, hackathon projects,
+    and certifications in <b>AI, Cloud, or Cybersecurity</b> further boosts career prospects.
+  </p>
+
+  <!-- Logos Section -->
+<div class="container text-center mt-4">
+  <!-- First row -->
+  <div class="row g-4 justify-content-center">
+    <div class="col-6 col-md-2">
+      <img src="{% static 'images/public/comp/google.gif' %}" alt="Google" class="img-fluid" style="height:80px;">
+    </div>
+    <div class="col-6 col-md-2">
+      <img src="{% static 'images/public/comp/microsoft.gif' %}" alt="Microsoft" class="img-fluid" style="height:80px;">
+    </div>
+    <div class="col-6 col-md-2">
+      <img src="{% static 'images/public/comp/amazon.gif' %}" alt="Amazon" class="img-fluid" style="height:80px;">
+    </div>
+    <div class="col-6 col-md-2">
+      <img src="{% static 'images/public/comp/facebook.gif' %}" alt="Facebook" class="img-fluid" style="height:80px;">
+    </div>
+    <div class="col-6 col-md-2">
+      <img src="{% static 'images/public/comp/apple.gif' %}" alt="Apple" class="img-fluid" style="height:80px;">
+    </div>
+  </div>
+
+  <!-- Second row -->
+  <div class="row g-4 justify-content-center mt-3">
+    <div class="col-6 col-md-2">
+      <img src="{% static 'images/public/comp/tcs.gif' %}" alt="TCS" class="img-fluid" style="height:80px;">
+    </div>
+    <div class="col-6 col-md-2">
+      <img src="{% static 'images/public/comp/infosys.gif' %}" alt="Infosys" class="img-fluid" style="height:80px;">
+    </div>
+    <div class="col-6 col-md-2">
+      <img src="{% static 'images/public/comp/wipro.gif' %}" alt="Wipro" class="img-fluid" style="height:80px;">
+    </div>
+    <div class="col-6 col-md-2">
+      <img src="{% static 'images/public/comp/hcl.gif' %}" alt="HCL" class="img-fluid" style="height:80px;">
+    </div>
+    <div class="col-6 col-md-2">
+      <img src="{% static 'images/public/comp/accenture.gif' %}" alt="Accenture" class="img-fluid" style="height:80px;">
+    </div>
+  </div>
+</div>
+
+
+</div>
+
+{% endblock %}

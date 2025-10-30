@@ -1,0 +1,222 @@
+{% extends 'base.html' %}
+{% block title %}AI & Data Science Engineering{% endblock %}
+{% block content %}
+{% load static %}
+
+<!-- Hero Section -->
+<div class="text-white text-center p-5 rounded-3 shadow"
+     style="background: url('{% static 'images/public/ai/ai_banner.jpeg' %}') no-repeat center center; background-size: cover;">
+
+  <!-- Overlay for better text visibility -->
+  <div class="bg-dark bg-opacity-50 p-5 rounded-3">
+    <h1>AI & Data Science Engineering</h1>
+    <p class="lead">From Machine Learning Fundamentals to Advanced AI Systems</p>
+  </div>
+
+</div>
+
+<!-- About Section -->
+<div class="mt-4">
+  <div class="row align-items-center my-4">
+    <!-- Banner Image -->
+    <div class="col-md-6">
+      <img src="{% static 'images/public/ai/ai_eng.jpg' %}"
+           alt="AI & Data Science Banner"
+           class="img-fluid rounded shadow">
+    </div>
+
+    <!-- Text Content -->
+    <div class="col-md-6">
+      <h2>About AI & Data Science Engineering</h2>
+      <p>
+        AI & Data Science Engineering focuses on designing intelligent systems and extracting insights from data.
+        Engineers in this field combine programming, mathematics, and domain knowledge to solve complex problems.
+      </p>
+      <p>
+        Data Scientists and AI engineers work on predictive analytics, machine learning models, deep learning,
+        natural language processing, and computer vision to help organizations make data-driven decisions.
+      </p>
+      <p>
+        With the rise of big data, automation, and AI technologies, this field offers diverse global career opportunities
+        and the chance to shape the future of technology across industries like healthcare, finance, e-commerce, and robotics.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- What You Learn -->
+<div class="mt-5">
+  <h3 class="mb-3">📘 What You Learn</h3>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card shadow-sm mb-3">
+        <div class="card-body">
+          <h5>Core AI & Data Science Concepts</h5>
+          <ul>
+            <li>Python & R Programming</li>
+            <li>Data Structures & Algorithms</li>
+            <li>Statistics & Probability</li>
+            <li>Data Wrangling & Visualization</li>
+            <li>Machine Learning & Deep Learning</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card shadow-sm mb-3">
+        <div class="card-body">
+          <h5>Advanced AI & Emerging Technologies</h5>
+          <ul>
+            <li>Natural Language Processing (NLP)</li>
+            <li>Computer Vision & Image Processing</li>
+            <li>Big Data Analytics & Cloud AI Platforms</li>
+            <li>AI Ethics & Explainable AI</li>
+            <li>Real-world AI & DS Projects</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Career Opportunities -->
+<div class="mt-5">
+  <h3 class="mb-3">💼 Career Opportunities</h3>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/ai/data_scientist.webp' %}"
+             alt="Data Scientist"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>Data Scientist</h5>
+          <p>Analyze and interpret complex datasets to derive business insights.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/ai/ml_engineer.jpg' %}"
+             alt="Machine Learning Engineer"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>Machine Learning Engineer</h5>
+          <p>Build and deploy ML models to automate decision-making and predictions.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/ai/ai_researcher.png' %}"
+             alt="AI Researcher"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>AI Researcher</h5>
+          <p>Develop novel AI algorithms and contribute to cutting-edge technology research.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/ai/business-analyst.png' %}"
+             alt="Business Analyst"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>Business Analyst</h5>
+          <p>Use data-driven insights to improve business strategies and operations.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/ai/data_engineer.webp' %}"
+             alt="Data Engineer"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>Data Engineer</h5>
+          <p>Design, build, and maintain large-scale data pipelines and infrastructure.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/ai/cloud_eng.jpg' %}"
+             alt="Cloud AI Engineer"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>Cloud AI Engineer</h5>
+          <p>Develop AI solutions using cloud platforms like AWS, Azure, and GCP.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Big Companies Section -->
+<div class="mt-5 p-4 bg-light rounded-3 shadow">
+  <h3 class="mb-3">🌍 Opportunities in Big Companies</h3>
+  <p>
+    AI & Data Science graduates are in demand at top global tech companies like
+    <b>Google, Microsoft, Amazon, Facebook, Apple, and IBM</b>. Leading analytics and AI startups also hire
+    skilled engineers for innovative projects.
+  </p>
+  <p>
+    In India, companies like <b>TCS, Infosys, Wipro, HCL, Accenture, and Fractal Analytics</b> provide
+    exciting opportunities. Strong programming, machine learning, cloud AI, and project experience increase
+    employability and career growth.
+  </p>
+
+  <!-- Logos Section -->
+  <div class="container text-center mt-4">
+    <div class="row g-4 justify-content-center">
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/ai/google.gif' %}" alt="Google" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/ai/microsoft.gif' %}" alt="Microsoft" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/ai/amazon.gif' %}" alt="Amazon" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/ai/facebook.gif' %}" alt="Facebook" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/ai/apple.gif' %}" alt="Apple" class="img-fluid" style="height:80px;">
+      </div>
+    </div>
+
+    <div class="row g-4 justify-content-center mt-3">
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/ai/tcs.gif' %}" alt="TCS" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/ai/infosys.gif' %}" alt="Infosys" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/ai/wipro.gif' %}" alt="Wipro" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/ai/hcl.gif' %}" alt="HCL" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/ai/accenture.gif' %}" alt="Accenture" class="img-fluid" style="height:80px;">
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

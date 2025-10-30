@@ -1,0 +1,47 @@
+{% extends 'base.html' %}
+{% block title %}Contact Us - College{% endblock %}
+
+{% block content %}
+<div class="container my-5">
+  <div class="row align-items-center">
+    <!-- Text Section -->
+    <div class="col-md-6 mb-4 mb-md-0">
+      <h1 class="fw-bold text-primary mb-4">Contact Us</h1>
+      <p class="lead">
+        We'd love to hear from you! Whether you have questions, feedback,
+        or require assistance, please reach out to us.
+      </p>
+      <p>
+        📍 <strong>Address:</strong> 123 College Road, City, State, India <br>
+        📞 <strong>Phone:</strong> +91 98765 43210 <br>
+        ✉️ <strong>Email:</strong> info@college.com
+      </p>
+    </div>
+
+    <!-- Contact Form Section -->
+    <div class="col-md-6">
+      <div class="card shadow-lg rounded">
+        <div class="card-body p-4">
+          <h3 class="fw-bold mb-3">Send us a Message</h3>
+          <form method="post" action="">
+            {% csrf_token %}
+            <div class="mb-3">
+              <label for="name" class="form-label">Full Name</label>
+              <input type="text" id="name" name="name" class="form-control" placeholder="Enter your name" required>
+            </div>
+            <div class="mb-3">
+              <label for="email" class="form-label">Email Address</label>
+              <input type="email" id="email" name="email" class="form-control" placeholder="Enter your email" required>
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label">Your Message</label>
+              <textarea id="message" name="message" class="form-control" rows="4" placeholder="Type your message here..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary w-100">Submit</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,221 @@
+{% extends 'base.html' %}
+{% block title %}Electrical Engineering{% endblock %}
+{% block content %}
+{% load static %}
+
+<!-- Hero Section -->
+<div class="text-white text-center p-5 rounded-3 shadow"
+     style="background: url('{% static 'images/public/ee/ee_banner.jpg' %}') no-repeat center center; background-size: cover;">
+
+  <!-- Overlay for better text visibility -->
+  <div class="bg-dark bg-opacity-50 p-5 rounded-3">
+    <h1>Electrical Engineering</h1>
+    <p class="lead">From Circuit Fundamentals to Modern Electrical Systems</p>
+  </div>
+
+</div>
+
+<!-- About Section -->
+<div class="mt-4">
+  <div class="row align-items-center my-4">
+    <!-- Banner Image -->
+    <div class="col-md-6">
+      <img src="{% static 'images/public/ee/ee_benner_image.webp' %}"
+           alt="Electrical Engineering Banner"
+           class="img-fluid rounded shadow">
+    </div>
+
+    <!-- Text Content -->
+    <div class="col-md-6">
+      <h2>About Electrical Engineering</h2>
+      <p>
+        Electrical Engineering (EE) deals with the study, design, and application of electrical systems,
+        circuits, and power generation. Electrical engineers ensure the smooth operation of electrical devices
+        that power homes, industries, and modern technologies.
+      </p>
+      <p>
+        EE professionals work on power systems, electronics, control systems, and renewable energy
+        technologies. They contribute to the development of smart grids, automation systems, and
+        electrical equipment for transportation, manufacturing, and communication sectors.
+      </p>
+      <p>
+        With continuous advancements in energy efficiency, sustainable power, and electronics, Electrical
+        Engineering offers vast career opportunities globally for skilled engineers.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- What You Learn -->
+<div class="mt-5">
+  <h3 class="mb-3">📘 What You Learn</h3>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card shadow-sm mb-3">
+        <div class="card-body">
+          <h5>Core Electrical Concepts</h5>
+          <ul>
+            <li>Electrical Circuits & Electronics</li>
+            <li>Power Systems & Machines</li>
+            <li>Control Systems & Instrumentation</li>
+            <li>Digital Electronics & Microcontrollers</li>
+            <li>Electrical Safety & Standards</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card shadow-sm mb-3">
+        <div class="card-body">
+          <h5>Emerging Electrical Technologies</h5>
+          <ul>
+            <li>Renewable Energy Systems (Solar, Wind)</li>
+            <li>Smart Grids & Energy Storage</li>
+            <li>IoT & Embedded Systems</li>
+            <li>Robotics & Automation</li>
+            <li>Electric Vehicles & Power Electronics</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Career Opportunities -->
+<div class="mt-5">
+  <h3 class="mb-3">💼 Career Opportunities</h3>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/ee/power_engineer.webp' %}"
+             alt="Power Engineer"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>Power Engineer</h5>
+          <p>Design and manage power generation, transmission, and distribution systems.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/ee/control_systems.jpg' %}"
+             alt="Control Systems Engineer"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>Control Systems Engineer</h5>
+          <p>Develop automation and control systems for industries and robotics.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/ee/electronics_engineer.jpg' %}"
+             alt="Electronics Engineer"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>Electronics Engineer</h5>
+          <p>Design and maintain electronic devices, circuits, and embedded systems.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/ee/renewable_energy.jpg' %}"
+             alt="Renewable Energy Engineer"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>Renewable Energy Engineer</h5>
+          <p>Design and implement sustainable energy solutions like solar and wind systems.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/ee/robotics.jpg' %}"
+             alt="Robotics Engineer"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>Robotics Engineer</h5>
+          <p>Develop automated machines and robotic systems for industrial applications.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/ee/electric_vehicles.jpg' %}"
+             alt="Electric Vehicle Engineer"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>Electric Vehicle Engineer</h5>
+          <p>Work on design and development of EV powertrains and charging infrastructure.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Big Companies Section -->
+<div class="mt-5 p-4 bg-light rounded-3 shadow">
+  <h3 class="mb-3">🌍 Opportunities in Big Companies</h3>
+  <p>
+    Electrical Engineering graduates can secure roles in leading power, electronics, and tech companies globally.
+    Giants like <b>Siemens, ABB, General Electric, Schneider Electric, and Tesla</b> actively hire EE professionals.
+    In India, companies like <b>BHEL, L&T, Tata Power, and Reliance</b> provide ample opportunities in power and electronics sectors.
+  </p>
+  <p>
+    Students with strong knowledge in electrical circuits, power systems, automation, and electronics,
+    along with hands-on project experience, can aim for internships and placements in top organizations.
+    Skills in <b>Renewable Energy, Robotics, and EV technology</b> further enhance career prospects.
+  </p>
+
+  <!-- Logos Section -->
+  <div class="container text-center mt-4">
+    <div class="row g-4 justify-content-center">
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/ee/siemens.gif' %}" alt="Siemens" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/ee/abb.gif' %}" alt="ABB" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/ee/ge.gif' %}" alt="General Electric" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/ee/schneider.gif' %}" alt="Schneider Electric" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/ee/tesla.gif' %}" alt="Tesla" class="img-fluid" style="height:80px;">
+      </div>
+    </div>
+
+    <div class="row g-4 justify-content-center mt-3">
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/ee/bhel.jpg' %}" alt="BHEL" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/ee/lt.gif' %}" alt="L&T" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/ee/tata_power.jpg' %}" alt="Tata Power" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/ee/reliance.png' %}" alt="Reliance" class="img-fluid" style="height:80px;">
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

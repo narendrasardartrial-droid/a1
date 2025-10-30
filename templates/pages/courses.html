@@ -1,0 +1,94 @@
+{% extends 'base.html' %}
+{% block content %}
+{% load static %}
+
+<div class="container my-5">
+    <h2 class="text-center mb-4">Our Courses</h2>
+    <div class="row">
+        <!-- Computer Engineering -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="{% static 'images/public/computer.avif' %}" class="card-img-top" alt="Computer Engineering">
+                <div class="card-body">
+                    <h5 class="card-title">Computer Engineering</h5>
+                    <p class="card-text">Focuses on software development, computer systems, and modern technologies to build future-ready engineers.</p>
+                    <a href="{% url 'computer_engineering' %}" class="btn btn-primary btn-sm">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- IT Engineering -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="{% static 'images/public/IT.jpg' %}" class="card-img-top" alt="IT Engineering">
+                <div class="card-body">
+                    <h5 class="card-title">IT Engineering</h5>
+                    <p class="card-text">Covers networking, databases, and IT infrastructure, preparing students for the digital world.</p>
+                    <a href="{% url 'it_engineering' %}" class="btn btn-primary btn-sm">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Electrical Engineering -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="{% static 'images/public/electrical.jpg' %}" class="card-img-top" alt="Electrical Engineering">
+                <div class="card-body">
+                    <h5 class="card-title">Electrical Engineering</h5>
+                    <p class="card-text">Explores power systems, electronics, and renewable energy to meet industry demands.</p>
+                    <a href="{% url 'electrical_engineering' %}" class="btn btn-primary btn-sm">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- AI & DS Engineering -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="{% static 'images/public/Ai.jpeg' %}" class="card-img-top" alt="AI and DS Engineering">
+                <div class="card-body">
+                    <h5 class="card-title">AI & DS Engineering</h5>
+                    <p class="card-text">Specializes in Artificial Intelligence and Data Science, empowering students with next-gen skills.</p>
+                    <a href="{% url 'ai_ds_engineering' %}" class="btn btn-primary btn-sm">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Civil Engineering -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="{% static 'images/public/civil.jpg' %}" class="card-img-top" alt="Civil Engineering">
+                <div class="card-body">
+                    <h5 class="card-title">Civil Engineering</h5>
+                    <p class="card-text">Focuses on construction, infrastructure, and sustainable design to build our future cities.</p>
+                    <a href="{% url 'civil_engineering' %}" class="btn btn-primary btn-sm">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mechanical Engineering -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="{% static 'images/public/mech.webp' %}" class="card-img-top" alt="Mechanical Engineering">
+                <div class="card-body">
+                    <h5 class="card-title">Mechanical Engineering</h5>
+                    <p class="card-text">Covers machines, robotics, and industrial design, shaping innovative problem-solvers.</p>
+                    <a href="{% url 'mechanical_engineering' %}" class="btn btn-primary btn-sm">Read More</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Electronics & Telecom Engineering -->
+        <div class="col-md-4 mb-4">
+            <div class="card h-100 shadow-sm">
+                <img src="{% static 'images/public/electronics_telecom.jpg' %}" class="card-img-top" alt="Electronics & Telecom Engineering">
+                <div class="card-body">
+                    <h5 class="card-title">Electronics & Telecommunication</h5>
+                    <p class="card-text">Deals with communication systems, embedded systems, and IoT technologies.</p>
+                    <a href="{% url 'electronics_telecom_engineering' %}" class="btn btn-primary btn-sm">Read More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,33 @@
+{% extends 'base.html' %}
+{% block title %}Teachers List{% endblock %}
+{% load static %}
+
+{% block content %}
+<div class="container mt-5">
+  <h2 class="mb-4">All Teachers</h2>
+
+  {% if teachers %}
+    <div class="row">
+      {% for teacher in teachers %}
+        <div class="col-md-4 mb-4">
+          <div class="card shadow-sm border-0 h-100">
+            {% if teacher.profile_pic %}
+              <img src="{{ teacher.profile_pic.url }}" class="card-img-top" alt="{{ teacher.name }}">
+            {% else %}
+              <img src="{% static 'images/public/default_teacher.png' %}" class="card-img-top" alt="Teacher">
+            {% endif %}
+            <div class="card-body">
+              <h5 class="card-title fw-bold">{{ teacher.name }}</h5>
+              <p class="card-text mb-1"><strong>Department:</strong> {{ teacher.department }}</p>
+              <p class="card-text"><strong>Email:</strong> {{ teacher.email }}</p>
+              <a href="{% url 'teacher_profile' teacher.id %}" class="btn btn-primary btn-sm mt-2">View Profile</a>
+            </div>
+          </div>
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <p>No teachers found.</p>
+  {% endif %}
+</div>
+{% endblock %}

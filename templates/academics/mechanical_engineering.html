@@ -1,0 +1,219 @@
+{% extends 'base.html' %}
+{% block title %}Mechanical Engineering{% endblock %}
+{% block content %}
+{% load static %}
+
+<!-- Hero Section -->
+<div class="text-white text-center p-5 rounded-3 shadow"
+     style="background: url('{% static 'images/public/mech/mech_banner.jpg' %}') no-repeat center center; background-size: cover;">
+
+  <!-- Overlay for better text visibility -->
+  <div class="bg-dark bg-opacity-50 p-5 rounded-3">
+    <h1>Mechanical Engineering</h1>
+    <p class="lead">From Thermodynamics to Advanced Mechanical Systems</p>
+  </div>
+
+</div>
+
+<!-- About Section -->
+<div class="mt-4">
+  <div class="row align-items-center my-4">
+    <!-- Banner Image -->
+    <div class="col-md-6">
+      <img src="{% static 'images/public/mech/mech_eng.jpg' %}"
+           alt="Mechanical Engineering Banner"
+           class="img-fluid rounded shadow">
+    </div>
+
+    <!-- Text Content -->
+    <div class="col-md-6">
+      <h2>About Mechanical Engineering</h2>
+      <p>
+        Mechanical Engineering focuses on the design, analysis, and manufacturing of machines and mechanical systems.
+        It combines principles of physics, materials science, and engineering mechanics to solve real-world problems.
+      </p>
+      <p>
+        Mechanical engineers work on everything from engines, HVAC systems, and industrial machines to robotics,
+        renewable energy systems, and automotive technologies. They play a key role in manufacturing, transportation,
+        and industrial automation.
+      </p>
+      <p>
+        With the rise of advanced manufacturing, robotics, and sustainable technologies, Mechanical Engineering offers
+        vast global career opportunities.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- What You Learn -->
+<div class="mt-5">
+  <h3 class="mb-3">📘 What You Learn</h3>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card shadow-sm mb-3">
+        <div class="card-body">
+          <h5>Core Mechanical Concepts</h5>
+          <ul>
+            <li>Thermodynamics & Heat Transfer</li>
+            <li>Fluid Mechanics & Hydraulics</li>
+            <li>Mechanics of Materials</li>
+            <li>Manufacturing Processes</li>
+            <li>Machine Design & CAD/CAM</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card shadow-sm mb-3">
+        <div class="card-body">
+          <h5>Emerging Technologies</h5>
+          <ul>
+            <li>Robotics & Automation</li>
+            <li>Renewable Energy Systems</li>
+            <li>3D Printing & Additive Manufacturing</li>
+            <li>Automotive & Aerospace Engineering</li>
+            <li>IoT & Smart Manufacturing</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Career Opportunities -->
+<div class="mt-5">
+  <h3 class="mb-3">💼 Career Opportunities</h3>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/mech/automotive_eng.jpg' %}"
+             alt="Automotive Engineer"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>Automotive Engineer</h5>
+          <p>Design and develop vehicles, engines, and automotive systems.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/mech/thermal_eng.webp' %}"
+             alt="Thermal Engineer"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>Thermal Engineer</h5>
+          <p>Work on heat transfer, HVAC, and energy systems for industries.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/mech/robotics_eng.jpg' %}"
+             alt="Robotics Engineer"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>Robotics Engineer</h5>
+          <p>Develop automated systems and industrial robots.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/mech/manufacturing_eng.jpg' %}"
+             alt="Manufacturing Engineer"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>Manufacturing Engineer</h5>
+          <p>Oversee production, process optimization, and industrial operations.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/mech/aerospace_eng.jpg' %}"
+             alt="Aerospace Engineer"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>Aerospace Engineer</h5>
+          <p>Work on aircraft, spacecraft, and propulsion systems.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/mech/energy_eng.jpeg' %}"
+             alt="Energy Engineer"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>Energy Engineer</h5>
+          <p>Develop renewable energy systems and optimize energy efficiency.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Big Companies Section -->
+<div class="mt-5 p-4 bg-light rounded-3 shadow">
+  <h3 class="mb-3">🌍 Opportunities in Big Companies</h3>
+  <p>
+    Mechanical Engineering graduates can work in leading automotive, aerospace, energy, and manufacturing companies.
+    Giants like <b>Siemens, General Electric, Tata Motors, Mahindra & Mahindra, and Bosch</b> actively recruit engineers.
+    In India, companies like <b>Larsen & Toubro, Bharat Heavy Electricals, Maruti Suzuki, and Ashok Leyland</b> offer thousands of opportunities.
+  </p>
+  <p>
+    Students with strong mechanical skills, CAD/CAM knowledge, and hands-on project experience can aim for internships
+    and placements. Knowledge in <b>Robotics, Thermal Systems, and Manufacturing Automation</b> further boosts career prospects.
+  </p>
+
+  <!-- Logos Section -->
+  <div class="container text-center mt-4">
+    <div class="row g-4 justify-content-center">
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/mech/siemens.gif' %}" alt="Siemens" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/mech/ge.gif' %}" alt="General Electric" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/mech/tata_motors.gif' %}" alt="Tata Motors" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/mech/mahindra.gif' %}" alt="Mahindra & Mahindra" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/mech/bosch.png' %}" alt="Bosch" class="img-fluid" style="height:80px;">
+      </div>
+    </div>
+
+    <div class="row g-4 justify-content-center mt-3">
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/mech/lt.gif' %}" alt="L&T" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/mech/bhel.jpg' %}" alt="BHEL" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/mech/maruti.gif' %}" alt="Maruti Suzuki" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/mech/ashok_leyland.svg' %}" alt="Ashok Leyland" class="img-fluid" style="height:80px;">
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}

@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<div class="container mt-5">
+  <h2>Welcome, {{ user.username }}</h2>
+<h1> DASHHHH BOARD</h1>
+  {% if user.is_superuser %}
+    <h4 class="mt-4">Admin Options</h4>
+    <a href="{% url 'create_teacher_step1' %}" class="btn btn-primary m-2">Create Teacher</a>
+    <a href="{% url 'create_student_step1' %}" class="btn btn-success m-2">Create Student</a>
+  {% endif %}
+
+  {% if user.teacher %}
+    <h4 class="mt-4">Teacher Options</h4>
+    <a href="{% url 'teacher_profile' teacher_id=user.teacher.id %}" class="btn btn-info m-2">View Profile</a>
+  {% endif %}
+
+  {% if user.student %}
+    <h4 class="mt-4">Student Options</h4>
+    <a href="{% url 'student_profile' student_id=user.student.id %}" class="btn btn-info m-2">View Profile</a>
+  {% endif %}
+</div>
+{% endblock %}

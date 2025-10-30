@@ -1,0 +1,205 @@
+{% extends 'base.html' %}
+{% block title %}Civil Engineering{% endblock %}
+{% block content %}
+{% load static %}
+
+<!-- Hero Section -->
+<div class="text-white text-center p-5 rounded-3 shadow"
+     style="background: url('{% static 'images/public/civil/civil_banner.webp' %}') no-repeat center center; background-size: cover;">
+
+  <!-- Overlay for better text visibility -->
+  <div class="bg-dark bg-opacity-50 p-5 rounded-3">
+    <h1>Civil Engineering</h1>
+    <p class="lead">From Building Foundations to Smart Infrastructure</p>
+  </div>
+
+</div>
+
+<!-- About Section -->
+<div class="mt-4">
+  <div class="row align-items-center my-4">
+    <!-- Banner Image -->
+    <div class="col-md-6">
+      <img src="{% static 'images/public/civil/civileng.webp' %}"
+           alt="Civil Engineering Banner"
+           class="img-fluid rounded shadow">
+    </div>
+
+    <!-- Text Content -->
+    <div class="col-md-6">
+      <h2>About Civil Engineering</h2>
+      <p>
+        Civil Engineering focuses on the design, construction, and maintenance of the built environment.
+        Civil engineers work on infrastructure projects like buildings, bridges, roads, dams, and water systems.
+      </p>
+      <p>
+        They combine knowledge of materials, structural analysis, geotechnical engineering, and environmental science
+        to develop safe, sustainable, and efficient infrastructure. Civil engineers play a vital role in shaping
+        cities and communities.
+      </p>
+      <p>
+        With urbanization and smart city projects on the rise, Civil Engineering offers a wide range of global career
+        opportunities in construction, infrastructure planning, and sustainable development.
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- What You Learn -->
+<div class="mt-5">
+  <h3 class="mb-3">📘 What You Learn</h3>
+  <div class="row">
+    <div class="col-md-6">
+      <div class="card shadow-sm mb-3">
+        <div class="card-body">
+          <h5>Core Civil Concepts</h5>
+          <ul>
+            <li>Structural Engineering & Mechanics</li>
+            <li>Surveying & Geotechnical Engineering</li>
+            <li>Construction Materials & Methods</li>
+            <li>Transportation & Highway Engineering</li>
+            <li>Hydraulics & Water Resource Engineering</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <div class="card shadow-sm mb-3">
+        <div class="card-body">
+          <h5>Emerging Civil Technologies</h5>
+          <ul>
+            <li>Smart Infrastructure & IoT in Construction</li>
+            <li>Green Building & Sustainable Design</li>
+            <li>Urban Planning & Smart Cities</li>
+            <li>3D Printing in Construction</li>
+            <li>Construction Project Management & BIM</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Career Opportunities -->
+<div class="mt-5">
+  <h3 class="mb-3">💼 Career Opportunities</h3>
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/civil/structural_eng.jpg' %}"
+             alt="Structural Engineer"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>Structural Engineer</h5>
+          <p>Design and analyze buildings, bridges, and other structures for safety and efficiency.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/civil/construction_mgr.jpeg' %}"
+             alt="Construction Manager"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>Construction Manager</h5>
+          <p>Oversee construction projects, managing timelines, budgets, and teams.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/civil/civil_designer.webp' %}"
+             alt="Civil Designer"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>Civil Designer</h5>
+          <p>Create detailed drawings and plans for infrastructure and urban projects.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="row">
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/civil/environmental_eng.jpg' %}"
+             alt="Environmental Engineer"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>Environmental Engineer</h5>
+          <p>Plan and manage sustainable projects for water, air, and soil conservation.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/civil/transport_eng.webp' %}"
+             alt="Transportation Engineer"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>Transportation Engineer</h5>
+          <p>Design and manage roads, highways, and traffic systems for urban development.</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class="card shadow-sm mb-3 text-center">
+        <img src="{% static 'images/public/civil/urban_planner.jpg' %}"
+             alt="Urban Planner"
+             class="mx-auto d-block mt-3"
+             style="height: 120px; width: auto;">
+        <div class="card-body">
+          <h5>Urban Planner</h5>
+          <p>Plan sustainable cities and infrastructure for growing populations.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Big Companies Section -->
+<div class="mt-5 p-4 bg-light rounded-3 shadow">
+  <h3 class="mb-3">🌍 Opportunities in Big Companies</h3>
+  <p>
+    Civil Engineering graduates can work with leading construction, infrastructure, and consulting companies.
+    Giants like <b>Larsen & Toubro, Reliance Infrastructure, GMR, DLF, and Shapoorji Pallonji</b> hire engineers
+    for large-scale projects. Government agencies also recruit for urban planning, railways, and public works.
+  </p>
+  <p>
+    Students with strong civil design skills, project management knowledge, and real-world experience can aim for
+    high-paying roles. Specialization in <b>Smart Cities, Sustainable Construction, or Transportation Engineering</b>
+    further enhances career prospects.
+  </p>
+
+  <!-- Logos Section -->
+  <div class="container text-center mt-4">
+    <div class="row g-4 justify-content-center">
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/civil/lnt.gif' %}" alt="L&T" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/civil/reliance.png' %}" alt="Reliance Infrastructure" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/civil/gmr.jpeg' %}" alt="GMR" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/civil/dlf.gif' %}" alt="DLF" class="img-fluid" style="height:80px;">
+      </div>
+      <div class="col-6 col-md-2">
+        <img src="{% static 'images/public/civil/sp.png' %}" alt="Shapoorji Pallonji" class="img-fluid" style="height:80px;">
+      </div>
+    </div>
+  </div>
+</div>
+
+{% endblock %}
